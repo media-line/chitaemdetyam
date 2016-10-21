@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0.0" client="site" method="upgrade">
+<name>mod_jshop_filter_gr</name> 
+	<creationDate>10.09.2013</creationDate>
+    <author>gray</author>
+    <authorEmail>sergeibolonikov@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <copyright></copyright>
+    <license>Open Source License, GNU GPL</license>
+    <version>1.0</version>
+	<description>mod_jshop_filter_gr</description>
+	<files>
+		<filename module="mod_jshop_filter_gr">mod_jshop_filter_gr.php</filename>
+	</files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">  
+                            
+            </fieldset> 
+        </fields>
+    </config>       
+</extension>

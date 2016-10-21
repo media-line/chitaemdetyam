@@ -1,0 +1,832 @@
+/* ========================================================================
+   Общие стили
+========================================================================== */
+a, a:hover{
+	transition: all 0.2s ease;
+}
+html{
+	overflow-x: hidden;
+}
+a:focus{
+	text-decoration: none;
+}
+ul.uk-unstyled{
+	list-style: none;
+}
+.uk-text-bold{
+	font-family: 'GothamPro-Bold';
+}
+.uk-text-hitchhike{
+	font-family: 'HitchHike';
+}
+.uk-text-uppercase{
+	text-transform: uppercase;
+}
+.uk-text-black{
+	color: #000;
+}
+.uk-inline-block{
+	display: inline-block;
+	vertical-align: top;
+}
+.uk-margin-medium-top{
+	margin-top: 15px;
+}
+.uk-button-news,
+.uk-button-small,
+.uk-button-medium,
+.uk-button-large,
+.uk-button-news:after,
+.uk-button-small:after,
+.uk-button-medium:after,
+.uk-button-large:after{
+	background: url(/images/icons/buttons.png) no-repeat;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1;
+	padding: 30px 0 48px;
+	width: 	250px;
+	transition: none;
+	text-transform: uppercase;
+	font-family: 'GothamPro-Bold';
+	color: #000;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.48);
+	position: relative;
+}
+.uk-button-small-filter {
+	background: url(/images/icons/filter-btn.png) no-repeat;
+	font-weight: bold;
+	line-height: 1;
+	transition: none;
+	text-transform: uppercase;
+	font-family: 'GothamPro-Bold';
+	color: #000;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.48);
+	position: relative;
+	height: 42px;
+	width: 47%;
+	background-size: contain;
+}
+.uk-button-small-filter span {
+	position: relative;
+	z-index: 2;
+	font-size: 13px;
+}
+.uk-button-news{
+	width: 139px;
+	padding: 18px 0 27px;
+	font-size: 12px;
+	background-position: -250px -77px;
+}
+.uk-button-small{
+	width: 110px !important;
+	padding: 15px 0;
+	font-size: 12px;
+	background-position: -389px -77px;
+}
+.uk-button-medium{
+	width: 194px;
+	padding: 23px 0 39px;
+	font-size: 15px;
+	background-position: 0 -192px;
+}
+.uk-button-news:after,
+.uk-button-small:after,
+.uk-button-medium:after,
+.uk-button-large:after,
+.uk-button-small-filter:after{
+	content: "";
+	opacity: 0;
+	background-position: 0 -96px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	transition: opacity 0.2s ease;
+	z-index: -1;
+}
+.uk-button-small-filter:after{
+	content: "";
+	opacity: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: opacity 0.2s ease;
+	z-index: -1;
+	background: url(/images/icons/filter-btn-hover.png) no-repeat;
+	height: 42px;
+	width: 100%;
+	background-size: contain;
+}
+.uk-button-small-filter:hover:after {
+	opacity: 1;	
+	z-index: 1;
+}
+.uk-button-news:after{
+	background-position: -250px -136px;
+	padding: 18px 0 27px;
+	height: 12px;
+	width: 139px;
+}
+.uk-button-small-label:after,
+.uk-button-small:after{
+	background-position: -389px -119px;
+	padding: 23px 0 39px;
+	height: 12px;
+	width: 110px;
+}
+.uk-button-medium:after{
+	background-position: -250px 0;
+	padding: 23px 0 39px;
+	height: 15px;
+}
+.uk-button-news:hover:after,
+.uk-button-small:hover:after,
+.uk-button-medium:hover:after,
+.uk-button-large:hover:after{
+	opacity: 1;
+	transition: opacity 0.2s ease;
+}
+.uk-button,
+.uk-button:focus,
+.uk-button:hover{
+	color: #000;
+	background-color: transparent;
+	position: relative;
+	z-index: 0;
+}
+::-webkit-input-placeholder {opacity: 1; transition: 0.2s ease}
+::-moz-placeholder          {opacity: 1; transition: 0.2s ease}
+:-moz-placeholder           {opacity: 1; transition: 0.2s ease}
+:-ms-input-placeholder      {opacity: 1; transition: 0.2s ease}
+:focus::-webkit-input-placeholder {opacity: 0; transition: 0.2s ease}
+:focus::-moz-placeholder          {opacity: 0; transition: 0.2s ease}
+:focus:-moz-placeholder           {opacity: 0; transition: 0.2s ease}
+:focus:-ms-input-placeholder      {opacity: 0; transition: 0.2s ease}
+#mxcpr {
+    display: none;
+}
+.uk-form .uk-form-row + .uk-form-row{
+	margin-top: 20px !important;
+}
+.uk-close:after {
+    display: block;
+    content: "\e903";
+    font-family: 'iconfont';
+}
+.uk-close:focus,
+.uk-close:hover {
+    opacity: 0.8;
+}
+.uk-tabs-list{
+	border-bottom: 1px solid #ddd;
+}
+.uk-tabs-list li{
+	display: inline-block;
+	list-style: none;
+}
+.uk-tabs-list li a{
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	padding: 5px 15px;
+	display: inline-block;
+}
+.uk-tabs-list li:first-child a{
+	border-left: 1px solid #ddd;
+}
+.uk-tabs-list li a:hover,
+.uk-tabs-list li.uk-active a{
+	color: #9adb31;
+}
+/* ========================================================================
+   Стили меню
+========================================================================== */
+.uk-navbar-nav > li > a {
+	text-transform: uppercase;
+}
+.uk-dropdown-navbar{
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+}
+.uk-dropdown-navbar .uk-nav-navbar > li a:hover{
+	background: #6fb600;
+}
+.tm-title{
+	margin-bottom: 30px;
+}
+/* ========================================================================
+   Стили слайдера
+========================================================================== */
+.uk-slide-content{
+    top: 100px;
+    left: 110px;
+	width: 520px;
+}
+.uk-slide-text{
+	font-size: 59px;
+	line-height: 1;
+	text-shadow: 0px 1px 0px rgba(105, 105, 105, 1);
+}
+.uk-slide-link{
+	bottom: 40px;
+	position: absolute;
+	z-index: 20;
+}
+.uk-slidenav{
+	background: rgba(255, 255, 255, 0.3);
+	width: 72px;
+	height: 72px;
+	border-radius: 100%
+}
+.uk-slidenav-previous:before,
+.uk-slidenav-next:before {
+	content: "\e900";
+	font-family: 'iconfont';
+	font-size: 35px;
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 26px;
+    top: 8px;
+	transition: all 0.2s ease;
+}
+.uk-slidenav-previous:before{
+	content: "\e901";
+	right: 26px;
+    left: inherit;
+}
+.uk-slidenav:hover{
+	background: rgba(255, 255, 255, 0.6);
+} 
+.uk-slidenav:hover:before{
+	color: rgba(0, 0, 0, 0.9);
+}  
+/* ========================================================================
+   Стили блока "Лучшие произведения"
+========================================================================== */
+.uk-bookshelf-wrapper{
+	background: url(/images/icons/bookshelf.jpg) no-repeat top center;
+    padding-bottom: 80px;
+}
+.uk-bestworks-title{
+	font-size: 43px;
+	line-height: 1;
+	color: #463713;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.7);
+	margin: 85px 0 60px;
+}
+.uk-bestworks{
+	padding: 0 92px;
+}
+.uk-slideset-buttons{
+	background: url(/images/icons/slidenav-bg.png) no-repeat;
+	width: 71px;
+	height: 72px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -36px;
+}
+.uk-slideset-buttons:hover{
+	-webkit-filter: brightness(1.3);
+	-moz-filter: brightness(1.3);
+	-ms-filter: brightness(1.3);
+	-o-filter: brightness(1.3);
+	filter: brightness(1.3);
+}
+.uk-slideset-prev{
+	left: 0;
+}
+.uk-slideset-next{
+	right: 0;
+}
+.uk-slideset-prev:after,
+.uk-slideset-next:after{
+	content: "\e900";
+	font-family: 'iconfont';
+	font-size: 35px;
+    color: #432d0e;
+    position: absolute;
+    left: 26px;
+    top: 26px;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.7);
+}
+.uk-slideset-prev:after{
+	content: "\e901";
+	left: 21px;
+}
+.uk-book-teaser-desc{
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	padding: 70px 30px 55px;
+	-webkit-box-shadow: 0px 3px 7px 0px rgba(63, 34, 10, 0.78);
+	-moz-box-shadow: 0px 3px 7px 0px rgba(63, 34, 10, 0.78);
+	box-shadow: 0px 3px 7px 0px rgba(63, 34, 10, 0.78);
+}
+.uk-book-teaser-desc:after{
+	content: "";
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 16%, rgba(255,255,255,0.93) 25%, rgba(213,239,170,0.75) 50%, rgba(128,207,1,0.81) 100%);
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 16%,rgba(255,255,255,0.93) 25%,rgba(213,239,170,0.75) 50%,rgba(128,207,1,0.81) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 16%,rgba(255,255,255,0.93) 25%,rgba(213,239,170,0.75) 50%,rgba(128,207,1,0.81) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cf80cf01',GradientType=0 );
+	position: absolute;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+.uk-book-teaser-desc:hover:after{
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+.uk-book-teaser-desc > div{
+	opacity: 0;
+	z-index: 10;
+	transition: opacity 0.3s ease;
+}
+.uk-book-teaser-desc:hover > div{
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+.uk-slideset-teaser-title{
+	height: 115px;
+}
+/* ========================================================================
+   Стили поиска
+========================================================================== */
+.uk-search-wrapper{
+	padding: 0 105px;
+	margin-top: 100px;
+}
+.uk-search-shadow:after{
+	content: "";
+	position: absolute;
+	left: 155px;
+	right: 155px;
+	bottom: 0;
+	height: 78px;
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.6);
+	box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.6);
+    border-radius: 20%;
+}
+.uk-search-wrapper .uk-search{
+	border-radius: 10px;
+	background: rgb(130,210,1);
+	background: rgb(170,231,72);
+	background: -moz-linear-gradient(top,  rgba(170,231,72,1) 0%, rgba(130,210,1,1) 17%, rgba(128,209,0,1) 87%, rgba(170,231,72,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(170,231,72,1) 0%,rgba(130,210,1,1) 17%,rgba(128,209,0,1) 87%,rgba(170,231,72,1) 100%);
+	background: linear-gradient(to bottom,  rgba(170,231,72,1) 0%,rgba(130,210,1,1) 17%,rgba(128,209,0,1) 87%,rgba(170,231,72,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aae748', endColorstr='#aae748',GradientType=0 );
+	padding: 14px;
+	/*z-index: 5;*/
+	-webkit-box-shadow: inset 0px -1px 0px 0px rgba(255,255,255,0.17);
+	-moz-box-shadow: inset 0px -1px 0px 0px rgba(255,255,255,0.17);
+	box-shadow: inset 0px -1px 0px 0px rgba(255,255,255,0.17);
+}
+.uk-search-wrapper .uk-search > *{
+	position: relative;
+	/*z-index: 5;*/
+}
+.uk-search-wrapper .uk-search .uk-input-text{
+	height: 50px;
+	border: none;
+	border-radius: 10px;
+	font-family: 'GothamPro';
+	font-size: 18px;
+	padding: 10px 30px;
+	color: #000;
+	-webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.55) inset;
+	-moz-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.55) inset;
+	box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.55) inset;
+}
+.uk-search-wrapper .uk-search .uk-input-text 	::-webkit-input-placeholder,
+.uk-search-wrapper .uk-search .uk-input-text	::-moz-placeholder,
+.uk-search-wrapper .uk-search .uk-input-text :-moz-placeholder,
+.uk-search-wrapper .uk-search .uk-input-text :-ms-input-placeholder {
+	font-family: 'GothamPro';
+	font-size: 18px;
+}
+.uk-search-wrapper .uk-search input[type="text"].uk-input-text:focus{
+    background: #fff;
+}
+.uk-search-wrapper .uk-search .uk-button{
+	position: absolute;
+	top: 18px;
+	right: 18px;
+}
+.uk-search-wrapper .uk-search .uk-button-small:before{
+	content: "\e902";
+	position: absolute;
+	top: 12px;
+    right: 75px;
+	font-size: 18px;
+	font-family: 'iconfont';
+	z-index: 15;
+}
+.uk-search-wrapper .uk-search .uk-button{
+	padding-left: 20px;
+}
+/* ========================================================================
+   Стили новостей
+========================================================================== */
+.uk-newsblock{
+	padding: 0 105px 100px;
+}
+.uk-newsblock-title{
+	margin: 70px 0 45px;
+}
+.bt-cs .bt-inner {
+	padding: 0 5px;
+}
+.bt-cs .bt-inner img {
+    outline: none;
+	padding: 0;
+	margin: 0 0 45px 0;
+	border: none;
+}
+.uk-news-title{
+	border-bottom: 1px solid #cecece;
+	font-family: 'ProximaNovaCond-Bold';
+	font-size: 16px;
+}
+.uk-news-title:hover{
+	color: #9adb31;
+	border-color: #ebf7d8;
+}
+.uk-news-text{
+	color: #6d6d6d;
+	font-family: 'ProximaNovaCond-Regular';
+	font-size: 16px;
+	margin-top: 10px;
+}
+/* ========================================================================
+   Стили социальных сетей
+========================================================================== */
+.uk-orange-wrapper{
+	background: #ffb12a;
+	-webkit-box-shadow: inset 0px 70px 70px -50px rgba(212,106,7, 0.9), inset 0px 20px 20px -20px rgba(0,0,0,1), inset 0px -70px 70px -55px rgba(212,106,7, 0.9), inset 0px -10px 10px -10px rgba(0,0,0,1);
+	-moz-box-shadow: inset 0px 70px 70px -50px rgba(212,106,7, 0.9), inset 0px 20px 20px -20px rgba(0,0,0,1), inset 0px -70px 70px -55px rgba(212,106,7, 0.9), inset 0px -10px 10px -10px rgba(0,0,0,1);
+	box-shadow: inset 0px 70px 70px -50px rgba(212,106,7, 0.9), inset 0px 20px 20px -20px rgba(0,0,0,1), inset 0px -70px 70px -55px rgba(212,106,7, 0.9), inset 0px -10px 10px -10px rgba(0,0,0,1);
+}
+.uk-social-block{
+	padding-bottom: 120px;
+}
+.uk-social-block-title{
+	margin: 70px 0 80px;
+}
+.uk-social-block .ya-share2__container{
+	/*text-align: center;*/
+	padding-left: 40px;
+}
+.uk-social-block .ya-share2__list{
+	width: 100% !important;
+}
+.uk-social-block .ya-share2__item{
+	width: 19% !important;
+}
+.uk-social-block .ya-share2__link{
+	position: relative !important;
+}
+.uk-social-block .ya-share2__badge{
+	position: absolute !important;
+    left: 125px !important;
+	top: -6px;
+}
+.uk-social-block .ya-share2__icon{
+	height: 35px !important;
+    width: 40px !important;
+    background-repeat: no-repeat !important;
+    background-size: 40px 35px !important;
+}
+.uk-social-block .ya-share2__counter {
+    font-size: 18px !important;
+    padding: 8px 8px 0 8px !important;
+}
+.uk-social-block .ya-share2__title{
+	display: block !important;
+	font-family: 'GothamPro-Bold' !important;
+	font-size: 15px !important;
+	text-transform: uppercase !important;
+	color: #fff !important;
+}
+.uk-social-block .ya-share2__item:hover {
+    opacity: 1 !important;
+}
+.uk-social-block .ya-share2__item:hover .uk-social-block .ya-share2__link,
+.uk-social-block .ya-share2__link:focus{
+    text-decoration: none;
+}
+.uk-social-block .ya-share2__item_service_odnoklassniki .ya-share2__badge {
+	left: 170px !important;
+}
+/* ========================================================================
+   Стили футера
+========================================================================== */
+.tm-footer{
+	padding: 60px 0;
+}
+.uk-footer-menu,
+.uk-footer-menu > li{
+	margin: 0;
+}
+/*.uk-footer-menu > li:first-child{
+	display: none;
+}*/
+.uk-footer-menu{
+	margin-left: -10px;
+}
+.uk-footer-menu > :nth-child(n+2):before {
+	border: none;
+}
+.uk-footer-menu > li > a{
+	font-size: 13px;
+	color: #000;
+}
+.uk-footer-menu > li > a:hover,
+.uk-subnav > .uk-active > * {
+	color: #6fb600;
+}
+.uk-medialine > span {
+	vertical-align: middle;
+}
+.uk-medialine > a {
+	color: #6fb600;
+}
+.uk-medialine > a:hover {
+	color: #000;
+	text-decoration: none;
+}
+/* ========================================================================
+   Стили модальных элементов
+========================================================================== */
+.uk-modal-page .uk-modal-button{
+	padding-right: 17px;
+}
+.uk-modal-button{
+	position: fixed;
+    bottom: 0;
+    right: 80px;
+}
+.uk-modal-button a{
+    padding: 20px 45px;
+	border-radius: 15px 15px 0 0;
+	border: 2px solid #ffd648;
+	border-bottom: none;
+	background: rgb(255,92,93);
+	background: -moz-linear-gradient(top,  rgba(255,92,93,1) 0%, rgba(221,43,43,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(255,92,93,1) 0%,rgba(221,43,43,1) 100%);
+	background: linear-gradient(to bottom,  rgba(255,92,93,1) 0%,rgba(221,43,43,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5d', endColorstr='#dd2b2b',GradientType=0 );
+	z-index: 20;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+	position: relative;
+}
+.uk-modal-button a > *{
+	z-index: 25;
+	position: relative;
+}
+.uk-modal-button a:after{
+	content: "";
+	position: absolute;
+	top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: 0;
+    border-radius: 15px 15px 0 0;
+	background: rgb(254,235,74);
+	background: -moz-linear-gradient(top,  rgba(254,235,74,1) 0%, rgba(249,163,13,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(254,235,74,1) 0%,rgba(249,163,13,1) 100%);
+	background: linear-gradient(to bottom,  rgba(254,235,74,1) 0%,rgba(249,163,13,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feeb4a', endColorstr='#f9a30d',GradientType=0 );
+	opacity: 0;
+	transition: all 0.2s ease;
+}
+.uk-modal-button a:hover:after{
+	opacity: 1;
+	transition: all 0.2s ease;
+}
+/* ========================================================================
+   Стили внутренних страниц
+========================================================================== */
+.uk-breadcrumb a{
+	color: #9adb31;
+}
+.uk-breadcrumb a:hover{
+	color: #242424;
+}
+.uk-panel-title {
+    margin-top: 17px;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+.mod_jshop_filter_gr{
+	padding-right: 30px;
+	font-size: 13px;
+	font-family: 'GothamPro';
+}
+.uk-blog-teaser-title{
+	font-size: 24px;
+}
+body:not(.uk-recommended-page) .uk-article a{
+	color: #6fb600;
+}
+.uk-article a{
+	border-bottom: 1px solid transparent;
+}
+.uk-article a:hover{
+	color: #000;
+	border-color: #000;
+}
+.uk-article-image,
+.uk-article-image:hover{
+	border: none !important;
+}
+.uk-article-image:hover{
+	opacity: 0.7;
+}
+body.uk-recommended-page .uk-article a:hover{
+	color: #6fb600;
+	border-color: transparent;
+}
+body:not(.uk-recommended-page) .uk-article a:hover{
+	color: #000;
+}
+a.uk-readmore,
+a.uk-send{
+	color: #000 !important;
+	border: none !important;
+}
+a.uk-readmore:hover,
+a.uk-send:hover{
+	border: none !important;
+}
+.uk-articles-list a:hover{
+	color: #9adb31;
+}
+.uk-articles-list td{
+	padding: 5px 0;
+}
+/* ========================================================================
+   Стили каталога
+========================================================================== */
+.uk-category-link:hover{
+	color: #9adb31;
+}
+.uk-teaser-title {
+	margin-top: -5px;
+}
+.uk-teaser-title a{
+	font-size: 28px;
+	line-height: 36px;
+}
+.uk-teaser-title a:hover{
+	color: #9adb31;
+}
+.uk-teaser-image{
+	/*width: 250px;
+    height: 300px;*/
+    width: 100px;
+    height: 125px;
+}
+.uk-teaser-image:hover{
+	opacity: 0.8;
+}
+.uk-teaser-description{
+	position: relative;
+	color: #6d6d6d;
+	font-family: GothamPro;
+	/*padding-bottom: 50px;*/
+	/*padding-bottom: 70px;*/
+}
+.uk-full-description{
+	color: #6d6d6d;
+	font-family: GothamPro;
+	margin-top: 40px;
+}
+.extra_fields_el + .block_efg,
+.extra_fields_group + .extra_fields_el,
+.extra_fields_el + .extra_fields_el {
+	margin-top: 5px;
+}
+.uk-teaser-text{
+    margin-top: 20px;
+}
+.uk-teaser-readmore{
+   /* right: 0;*/
+    left: 25px;
+    bottom: 20px;
+}
+.uk-filter-wrapper{
+	/*background: #ffb12a;*/
+	color: #000;
+}
+.uk-full-images{
+	width: 250px;
+	height: 300px;
+}
+img.jshop_img_thumb{
+	padding: 0px;
+    border: none;
+    margin-left: 0px; 
+    margin-right: 0px;
+    margin-bottom: 0px;
+    cursor: default;
+}
+.issuuembed  > div > div:last-child{
+	display: none;
+}
+.productfull .image_middle {
+    width: 300px;
+    height: 360px;
+}
+.productfull .extra_fields {
+	margin-top: -5px;
+}
+.uk-full-bookread{
+	margin-bottom: 50px;
+}
+.uk-full-downloadbtn{
+	margin-top: 15px;
+	font-size: 11px;
+}
+.attributgr_name{
+	color: #6d6d6d;
+	font-weight: bold;
+	font-family: 'GothamPro-Bold';
+}
+.jshop_prod_attributes .input_type_radio input{
+	display: none;
+}
+.uk-related-title{
+	margin-top: 45px;
+    font-size: 32px;
+    line-height: 50px;
+}
+.uk-nav-side > li > a {
+    padding: 10px;
+}
+.uk-nav-side ul {
+    padding-left: 0px;
+}
+.uk-nav-side ul a{
+	padding: 5px 10px 5px 30px;
+	position: relative;
+}
+.uk-nav-parent-icon > .uk-parent.uk-open > a:after {
+    font-size: 16px;
+}
+.uk-nav-side ul a:hover{
+    background: #6fb600;
+	color: #fff;
+}
+.uk-nav-side ul a:before{
+    content: "\f105";
+	font-family: 'FontAwesome';
+	font-size: 18px;
+	position: absolute;
+	left: 12px;
+	top: 3px;
+	color: #6fb600;
+}
+.jshop_list_manufacturer .manufacturer_name a:hover{
+	color: #6fb600;
+}
+.uk-full-image img{
+	width: 100px;
+}
+@media (max-width:1270px){
+	.uk-button-small-filter span {
+		font-size: 10px;
+	}
+}
+@media (max-width:1080px){
+	.uk-button-small-filter:after, .uk-button-small-filter {
+		height: 38px;
+	}
+}
+.uk-articles-list a {
+	font-family: 'GothamPro';
+}
+.tm-sidebar-a a {
+	font-family: 'GothamPro';
+}
+@media (max-width: 767px){
+.jshop_list_product .block_product {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+
+
+
+
+
+

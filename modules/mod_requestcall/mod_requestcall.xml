@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" method="upgrade">
+    <name>MOD_REQUESTCALL_XML_NAME</name>
+	<author>Lange inc.</author>
+	<authorEmail>lanhedmitriy@gmail.ru</authorEmail>
+	<authorUrl>lange.org</authorUrl>
+	<creationDate>January 2015</creationDate>
+    <version>1.0.0</version>
+	<copyright>Copyright (C) 2014 Lange inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<description>MOD_REQUESTCALL_XML_DESCRIPTION</description>
+	
+    <files>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+		<filename module="mod_requestcall">mod_requestcall.php</filename>
+		<filename>send.php</filename>
+		<filename>mod_requestcall.xml</filename>
+		<filename>index.html</filename>		
+    </files>
+	
+	<languages folder="language">
+		<language tag="ru-RU">ru-RU/ru-RU.mod_requestcall.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.mod_requestcall.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_requestcall.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_requestcall.sys.ini</language>
+	</languages>
+	
+    <config>
+    <fields name="params">
+        <fieldset name="basic">
+			<field  
+				name="email_admin" 
+				type="text" 
+				label="MOD_REQUESTCALL_FIELD_EMAILADMIN_LABEL"
+				description="MOD_REQUESTCALL_FIELD_EMAILADMIN_DESCRIPTION">
+			</field> 	
+			<field 
+				name="subject" 
+				type="text" 
+				label="MOD_REQUESTCALL_FIELD_SUBJECT_LABEL">
+			</field>
+			<field
+				name="show_send_time" 
+				type="radio"
+				label="MOD_REQUESTCALL_FIELD_SHOW_SENDTIME"
+				description="MOD_REQUESTCALL_FIELD_SHOW_SENDTIME_DESCRIPTION"
+				default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>	  
+	   		</field>
+
+		</fieldset>
+        <fieldset name="advanced">			
+			<field
+				name="layout"
+				type="modulelayout"
+				label="JFIELD_ALT_LAYOUT_LABEL"
+				description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+			<field
+				name="moduleclass_sfx"
+				type="textarea" rows="3"
+				label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+				description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			<field
+				name="cache"
+				type="list"
+				default="1"
+				label="COM_MODULES_FIELD_CACHING_LABEL"
+				description="COM_MODULES_FIELD_CACHING_DESC">
+				<option	value="1">JGLOBAL_USE_GLOBAL</option>
+				<option	value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+			</field>
+			<field
+				name="cache_time"
+				type="text"
+				default="900"
+				label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+				description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			<field
+				name="cachemode"
+				type="hidden"
+				default="itemid">
+				<option	value="itemid"></option>
+			</field>
+        </fieldset> 
+    </fields>
+    </config>
+</extension>
+
+
+
+
+

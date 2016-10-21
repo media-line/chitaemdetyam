@@ -1,0 +1,9 @@
+2016-05-19 08:29:58 
+Start install: /home/read/domains/read.medialine.by/public_html/tmp/AddonAttributeIndependentAdminType_1.1.0.zip
+2016-05-19 08:29:58 Copy file: /administrator/components/com_jshopping/controllers/attributesvaluesajax.php
+2016-05-19 08:29:58 Copy file: /components/com_jshopping/lang/addon_attr_admin_type/de_DE.php
+2016-05-19 08:29:58 Copy file: /components/com_jshopping/lang/addon_attr_admin_type/en-GB.php
+2016-05-19 08:29:58 Copy file: /components/com_jshopping/lang/addon_attr_admin_type/ru-RU.php
+2016-05-19 08:29:58 Copy file: /plugins/jshoppingadmin/attr_admin_type/ajax.js
+2016-05-19 08:29:58 Copy file: /plugins/jshoppingadmin/attr_admin_type/attr_admin_type.php
+2016-05-19 08:29:58 Copy file: /plugins/jshoppingadmin/attr_admin_type/attr_admin_type.xml

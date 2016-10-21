@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.x" client="site" method="upgrade">
+  <name>SJ HTML5 AudioFly</name>
+  <author>ExtensionSpot</author>
+  <creationDate>21 Apr 2015</creationDate>
+  <copyright>All rights reserved by ExtensionSpot.</copyright>
+  <license>GPL 2.0</license>
+  <authorEmail>support@extensionspot.net</authorEmail>
+  <authorUrl>www.extensionspot.net</authorUrl>
+  <version>1.4.0</version>
+  <description>MOD_SJ_AUDIOFLY_XML_DESCRIPTION</description>
+  <files>
+    <filename module="mod_sj_html5_audiofly">mod_sj_html5_audiofly.php</filename>
+    <filename>index.html</filename>
+    <filename>helper.php</filename>
+     <folder>tmpl</folder>
+    <folder>images</folder>
+    <folder>js</folder>
+    <folder>css</folder>
+    </files>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.mod_sj_html5_audiofly.ini</language>
+	<language tag="en-GB">en-GB/en-GB.mod_sj_html5_audiofly.sys.ini</language>
+  </languages>
+  <config >
+    <fields name="params" >
+<fieldset name="basic">
+</fieldset> 
+<fieldset name="settings" label="Settings">
+<field name="spacer1" type="spacer" default="" description="" label="&lt;p style=&quot;color: #ffffff; background-color: #26627E;width:474px;text-align:center;&quot;&gt;&lt;strong&gt;SJ HTML5 AudioFly Settings&lt;/strong&gt;&lt;/p&gt;" />
+<field name="selitembgcolors" type="color" default="#333" label="Selected item bg color" description="The color of the active song background" />
+<field name="selitemtxtcolor" type="color" default="#fff" label="Selected song text color" description="The color of the active song text" />
+<field name="plbgcolor" type="color" default="#222" label="Library background color" description="The  color of the library background" />
+<field name="pltxtcolor" type="color" default="#FF9F0F" label="Library text color" description="The color of the library text" />
+	<field name="plopen" type="radio" default="hidden" label="Library status" description="" >
+          <option value="hidden">Closed</option>
+          <option value="nehidden">Opened</option>
+        </field>
+<field name="plrepeat" type="radio" default="pause" label="Library repeat" description="On repeat the library will start over after the last song has finished playng" >
+          <option value="pause">No-Repeat</option>
+          <option value="play">Repeat</option>
+        </field>
+<field name="displaydwld" type="radio" default="table-cell" label="Show download icon" description="Display a icon for buy/download or info purposes" >
+          <option value="table-cell">Show</option>
+          <option value="none">Hide</option>
+        </field>
+		
+<field name="download_icon" type="imagelist" default="Green-U-arrow.png" directory="modules/mod_sj_html5_audiofly/images/dwldicons" stripext="" hide_none="" label="Download/Shop link icon" description="Select icon for Download/Shop link " />
+
+<field name="mymusictxt" type="text" default="My music" label="Library sticky text" description="When the library has items, a small block will appear at the bottom of the screen. This is the text that will be written there." />
+
+<field name="spacer2" type="spacer" default="" description="" label="&lt;p style=&quot;color: #ffffff; background-color: #26627E;width:474px;text-align:center;&quot;&gt;&lt;strong&gt;Backgrounds&lt;/strong&gt;&lt;/p&gt;" />		
+		
+<field name="use_bg_fly" type="list" default="gradientii" label="Background" description="For gradients the colors below will be used.For 3 all colors, for 2 color nr 1 and 2 and for simple color just color nr.1 and for none...none">
+				<option value="gradientiii">Gradient 3 colors</option>
+				<option value="gradientii">Gradient 2 colors</option>
+				<option value="flat">Simple color</option>
+				<option value="none">None</option>
+			</field>	
+			
+<field name="gradient_orientation" type="list" default="vertical" label="Gradient Orientation" description="The orientation of the gradient">
+				<option value="vertical">Vertical</option>
+				<option value="horizontal">Horizontal</option>
+				<option value="diagonalright">Diagonal right</option>
+				<option value="diagonalleft">Diagonal left</option>
+				<option value="radial">Radial</option>
+			</field>		
+		
+<field name="item_bg_color_flyi" type="color" default="" label="Item background color 1" description="This color is used for 'Gradient' and 'Simple color' option above" />
+
+<field name="item_bg_color_flyii" type="color" default="" label="Item background color 2" description="This color is used only for gradient" />
+
+<field name="item_bg_color_flyiii" type="color" default="" label="Item background color 3" description="This color is used only for gradient" />
+
+<field name="spacer3" type="spacer" default="" description="" label="&lt;p style=&quot;color: #ffffff; background-color: #26627E;width:474px;text-align:center;&quot;&gt;&lt;strong&gt;JQUERY&lt;/strong&gt;&lt;/p&gt;" />
+
+<field name="flloadjq" type="list" default="yes" label="Load JQuery" description="" >
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </field>
+
+
+
+
+</fieldset> 
+    </fields>
+  </config>
+</extension>

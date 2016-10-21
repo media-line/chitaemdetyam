@@ -1,0 +1,178 @@
+/**
+* Module mod_sj_html5_audiofly For Joomla 3.x
+* Created by	: SuperJoom
+* Email			: info@superjoom.com
+* Created on	: 05 Feb 2013
+* Last Modified : 06 August 2013
+* URL			: www.superjoom.com
+* Copyright (C) 2011-2013  Super Joom
+* License GPLv2.0 - http://www.gnu.org/licenses/gpl-2.0.html
+*/
+#audiowrap{
+height:30px;
+//background:url(../images/_player-bg4.png);
+border-bottom: 1px solid rgba(255,255, 255, 0.09);
+}
+.ctrlbtn{
+width:30px;
+height:30px;
+}
+#hidefly{
+height:20px;
+padding:0 5px;
+float:left;
+margin-top:6px;
+cursor:pointer;
+color:#FFF;
+}
+#hidefly:hover{
+color:rgb(255, 159, 15);
+}
+#btnPrev{
+background:url(../images/player-previous.png) no-repeat center center scroll;
+float:left;
+cursor:pointer;
+}
+#btnNext{
+background:transparent url(../images/player-next.png) no-repeat center center scroll;
+float:left;
+cursor:pointer;
+}
+#btnPlay{
+background:transparent url(../images/player-play.png) no-repeat center center scroll;
+float:left;
+cursor:pointer;
+}
+#btnPause{
+background:transparent url(../images/player-pause.png) no-repeat center center scroll;
+float:left;
+display:block;
+cursor:pointer;
+}
+#progressBar { 
+   border:1px solid #aaa; 
+   color:#fff; 
+   width:200px; 
+   height:10px;
+   float:left;
+   margin-top: 9px;
+   cursor:pointer;
+   text-align: left;
+}
+#progresss {
+   background-color:rgb(255, 159, 15);
+   height:10px;
+   display:block;
+}
+#tracktime{
+color:#FFF;
+float:left;
+margin: 10px 7px 7px 0px;
+}
+#audioVolume{
+border:1px solid #aaa; 
+color:#FFF;
+height:5px;
+float:left;
+margin-top: 11px;
+margin-right:35px;
+cursor:pointer;
+width:50px;
+}
+#volp {
+   background-color:rgb(255, 159, 15);
+   height:5px;
+  width:100%; 
+   //display:inline-block;
+}
+#mute{
+width:20px;
+height:30px;
+float:left;
+cursor:pointer;
+}
+.muted{background:transparent url(../images/audio_mute.gif) no-repeat center center scroll;}
+.unmuted{background:transparent url(../images/audio_volume.gif) no-repeat center center scroll;}
+#playlist{
+width:20px;
+height:30px;
+float:left;
+padding:0 10px 0 5px;
+background:transparent url(../images/icon-list.png) no-repeat center center scroll;
+cursor:pointer;
+}
+.hidden{display:none ;}
+.nehidden{display:block ;}
+#download{
+
+cursor:pointer;
+
+}
+#download:hover{
+color:rgb(255, 159, 15);
+}
+#plUL{
+margin:0 !important;
+padding:0 !important;
+list-style: none !important;
+position: relative ;
+
+}
+#plwrap_inner{
+overflow:hidden;
+max-height: 300px;
+position: relative ;
+}
+
+#plUL li div div {
+cursor:pointer;
+float:left;
+}
+.plItem{
+
+float: left;
+  width: 100%;
+}
+#plUL li {
+overflow:hidden;
+border-bottom:1px solid rgba(0, 0, 0, 0.09);
+}
+#plUL li:hover {
+font-weight:bold;
+cursor:pointer;
+}
+.plSel{
+font-weight:bold;
+}
+.plNum{padding:5px;}
+.plTitle{padding:5px 0 5px 0;
+}
+.plLength{padding:5px 10px 5px 5px;
+float:right !important;}
+#overlay {
+				position:fixed; 
+				top:0;
+				left:0;
+	/*			width:100%;
+				height:100%;
+	*/			background:#000;
+				opacity:0.5;
+				filter:alpha(opacity=50);
+			}
+
+		/*	#content_modal {
+				border-radius:8px;
+				background:#fff;
+				padding:20px;
+			}*/
+			#closes{
+				position:absolute;
+				background:url(../images/close-x.png) -5px 0 no-repeat;
+				width:24px;
+				height:27px;
+				display:block;
+				text-indent:-9999px;
+				top:6px;
+				right:10px;
+			}
+}

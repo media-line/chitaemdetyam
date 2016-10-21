@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install type="plugin" version="1.5" method="upgrade" group="jshoppingadmin">
+	<name>JoomShopping Addon Admin type attribut</name>
+	<creationDate>15.12.2011</creationDate>
+	<version>1.1.0</version>
+	<author>MAXXmarketing</author>
+	<authorEmail>marketing@maxx-marketing.net</authorEmail>
+	<authorUrl>http://www.webdesigner-profi.de</authorUrl>
+	<copyright></copyright>
+	<license>MAXXmarketing GmbH. All rights reserved.</license>
+	<description>Plugin for Admin Atribut Type</description> 
+    <files>
+        <filename plugin="attr_admin_type">attr_admin_type.php</filename>
+    </files>
+</install>
